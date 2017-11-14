@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.edu.iff.pooa20172.trabalho01_2017_2.MainActivity">
+
+    <EditText
+        android:id="@+id/principal_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nome"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/principal_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Valor ganho por mês"
+        tools:layout_editor_absoluteX="85dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/principal_nome" />
+
+    <EditText
+        android:id="@+id/principal_horas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Horas trabalhadas"
+        app:layout_constraintTop_toBottomOf="@+id/principal_valor"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <Button
+        android:id="@+id/principal_botao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="chamar_activity"
+        android:text="Calcular"
+        app:layout_constraintTop_toBottomOf="@+id/principal_horas"
+        tools:layout_editor_absoluteX="146dp" />
+</android.support.constraint.ConstraintLayout>
